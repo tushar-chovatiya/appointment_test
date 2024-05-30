@@ -1,0 +1,952 @@
+{
+	"info": {
+		"_postman_id": "593894f6-ad82-41c1-a331-ef1e8c5e7fb5",
+		"name": "Appointment Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "35036961"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Get all user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/users?page=1&limit=10&search&status=active&orderBy=DESC",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "search",
+									"value": null
+								},
+								{
+									"key": "status",
+									"value": "active",
+									"description": "active or inactive "
+								},
+								{
+									"key": "orderBy",
+									"value": "DESC",
+									"description": "ASC or DESC"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get all user",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/users?page=1&limit=10&search&status=active&orderBy=DESC",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"users"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "limit",
+											"value": "10"
+										},
+										{
+											"key": "search",
+											"value": null
+										},
+										{
+											"key": "status",
+											"value": "active",
+											"description": "active or inactive "
+										},
+										{
+											"key": "orderBy",
+											"value": "DESC",
+											"description": "ASC or DESC"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2151"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"867-TrMnyhH+uiySJw6qM5CeJHYTL8Y\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 May 2024 11:13:39 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"all user retrived successfully\",\n    \"data\": {\n        \"totalPage\": 2,\n        \"totalCount\": 14,\n        \"currentPage\": 1,\n        \"data\": [\n            {\n                \"id\": 15,\n                \"fullName\": \"Wilson Wolff\",\n                \"email\": \"Nelson.Trantow@yahoo.com\",\n                \"password\": \"$2b$10$sDV8RZPlTONZ0A/x6W/k5OrgwDFqB.Dcmwaj5R.lNo8hDPuc7wtnS\",\n                \"status\": \"active\",\n                \"createdDate\": \"2024-05-30T09:56:40.919Z\"\n            },\n            {\n                \"id\": 14,\n                \"fullName\": \"Lloyd Harvey\",\n                \"email\": \"Jillian_Bogan@gmail.com\",\n                \"password\": \"$2b$10$CLCB3WHplloRDBahttYqPugD3hT.QbqbYfMkL90pCWgXTDNhtdVnO\",\n                \"status\": \"active\",\n                \"createdDate\": \"2024-05-30T09:56:38.114Z\"\n            },\n            {\n                \"id\": 13,\n                \"fullName\": \"Miss Rodney Funk\",\n                \"email\": \"Jessie.Block73@yahoo.com\",\n                \"password\": \"$2b$10$LNnysB6nSJLW2GdBqJrs8O2s6mywoVyM8bYaTiyIj51qPt4O6DLLy\",\n                \"status\": \"active\",\n                \"createdDate\": \"2024-05-30T09:56:35.121Z\"\n            },\n            {\n                \"id\": 12,\n                \"fullName\": \"Miss Naomi Emard\",\n                \"email\": \"Eldred_Rolfson@yahoo.com\",\n                \"password\": \"$2b$10$VplP/X4AaU8L0YD/gu7Qve2d4iY7giUjzevcFP2RPRhbEBxVp4Y0K\",\n                \"status\": \"active\",\n                \"createdDate\": \"2024-05-30T09:56:32.865Z\"\n            },\n            {\n                \"id\": 11,\n                \"fullName\": \"Marc Schmidt\",\n                \"email\": \"Grace.Reinger@gmail.com\",\n                \"password\": \"$2b$10$JJCekNr6gNkA4dLo5cSn5ezpGSdEIznZK7PjOpI2WDFpNxdah3ZzO\",\n                \"status\": \"active\",\n                \"createdDate\": \"2024-05-30T09:56:30.524Z\"\n            },\n            {\n                \"id\": 10,\n                \"fullName\": \"Jaime Lueilwitz\",\n                \"email\": \"Avery19@yahoo.com\",\n                \"password\": \"$2b$10$TkD0uHVRVjK9IRG2YFyoeOZjAcP8AO1hHkd4fj7v67blMy9lN8qZq\",\n                \"status\": \"active\",\n                \"createdDate\": \"2024-05-30T09:56:28.440Z\"\n            },\n            {\n                \"id\": 9,\n                \"fullName\": \"Brittany Marquardt\",\n                \"email\": \"Elbert96@hotmail.com\",\n                \"password\": \"$2b$10$xHJhZPAwpBc8HvEHHOzX/uR02cMWDtNY1sNhF51UfUi/gTRKB2zRm\",\n                \"status\": \"active\",\n                \"createdDate\": \"2024-05-30T09:56:25.602Z\"\n            },\n            {\n                \"id\": 7,\n                \"fullName\": \"Brent Pfeffer IV\",\n                \"email\": \"Hope81@hotmail.com\",\n                \"password\": \"$2b$10$35p/oWWQAq8Kd4..H40/XOmgIieR6d7yuOUigpP2AEs7fjOyTTEnm\",\n                \"status\": \"active\",\n                \"createdDate\": \"2024-05-30T09:30:51.129Z\"\n            },\n            {\n                \"id\": 6,\n                \"fullName\": \"Lynne Bergstrom\",\n                \"email\": \"Rod_Heathcote@gmail.com\",\n                \"password\": \"$2b$10$/RBsoUUPFwCK5GFUjaLm7OZqImONs9d32gSccsozILerrwJsb2JzK\",\n                \"status\": \"active\",\n                \"createdDate\": \"2024-05-30T09:30:50.080Z\"\n            },\n            {\n                \"id\": 5,\n                \"fullName\": \"Bethany Johns\",\n                \"email\": \"Keeley_Murazik84@yahoo.com\",\n                \"password\": \"$2b$10$jkiwnq8BOcXyyzUdEePQe.5W58IO8UaVScH3O2RikoFC1bi1OHmae\",\n                \"status\": \"active\",\n                \"createdDate\": \"2024-05-30T09:30:48.589Z\"\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "get One user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/users/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get One user",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/users/:id",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"users",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "250"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"fa-4DXIlDfAS+RPXgHGoRFt6IB2vIk\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 May 2024 09:50:55 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"user details retrived\",\n    \"data\": {\n        \"id\": 1,\n        \"fullName\": \"Rosemarie Stamm\",\n        \"email\": \"Lyda_Halvorson59@yahoo.com\",\n        \"password\": \"$2b$10$0P6hhDccKUbix1kQY2.xV.5H9cCQYKq8QIy9CBpVdXOuxVQYg7OLi\",\n        \"status\": \"active\",\n        \"createdDate\": \"2024-05-30T09:30:12.180Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "User Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fullName\":\"{{$randomFullName}}\",\r\n    \"email\":\"{{$randomEmail}}\",\r\n    \"status\":\"active\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/users/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "User Update",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"fullName\":\"{{$randomFullName}}\",\r\n    \"email\":\"{{$randomEmail}}\",\r\n    \"status\":\"active\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/users/:id",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"users",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "10"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "252"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"fc-lcgMFu9te8/kujwLeJ8/NiXk9yc\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 May 2024 11:09:57 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"user details updated succefully\",\n    \"data\": {\n        \"id\": 10,\n        \"fullName\": \"Jaime Lueilwitz\",\n        \"email\": \"Avery19@yahoo.com\",\n        \"password\": \"$2b$10$TkD0uHVRVjK9IRG2YFyoeOZjAcP8AO1hHkd4fj7v67blMy9lN8qZq\",\n        \"status\": \"active\",\n        \"createdDate\": \"2024-05-30T09:56:28.440Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "delete user",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/users/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "8"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "delete user",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/users/:id",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"users",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "8"
+										}
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "51"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"33-j8yJjswCbM43cPVY4q4qVMHL0FY\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 May 2024 11:10:42 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": true,\n    \"message\": \"user deleted Successfully\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Create user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fullName\":\"{{$randomFullName}}\",\r\n    \"email\":\"{{$randomEmail}}\",\r\n    \"password\":\"123456\",\r\n    \"status\":\"active\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create user",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"fullName\":\"{{$randomFullName}}\",\r\n    \"email\":\"{{$randomEmail}}\",\r\n    \"password\":\"123456\",\r\n    \"status\":\"active\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/users",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"users"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "247"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"f7-0XGqryKoGG3TYT4xrmd+ofpyXNI\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 May 2024 09:30:51 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"fullName\": \"Brent Pfeffer IV\",\n        \"email\": \"Hope81@hotmail.com\",\n        \"status\": \"active\",\n        \"password\": \"$2b$10$35p/oWWQAq8Kd4..H40/XOmgIieR6d7yuOUigpP2AEs7fjOyTTEnm\",\n        \"id\": 7,\n        \"createdDate\": \"2024-05-30T09:30:51.129Z\"\n    },\n    \"message\": \"user Created Successfully\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Appointment",
+			"item": [
+				{
+					"name": "Get all Appointment",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/appointments?page=1&limit=10&search&status=active&orderBy=DESC",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"appointments"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "search",
+									"value": null
+								},
+								{
+									"key": "status",
+									"value": "active",
+									"description": "active or inactive"
+								},
+								{
+									"key": "orderBy",
+									"value": "DESC",
+									"description": "ASC ot DESC"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get all Appointment",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/appointments?page=1&limit=10&search&status=active&orderBy=DESC",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"appointments"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "limit",
+											"value": "10"
+										},
+										{
+											"key": "search",
+											"value": null
+										},
+										{
+											"key": "status",
+											"value": "active",
+											"description": "active or inactive"
+										},
+										{
+											"key": "orderBy",
+											"value": "DESC",
+											"description": "ASC ot DESC"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "982"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3d6-36D2MvRHFgzR7UjL3loYxxwMor4\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 May 2024 14:46:45 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Appointment list retrived\",\n    \"data\": {\n        \"totalPage\": 1,\n        \"totalCount\": 5,\n        \"currentPage\": 1,\n        \"data\": [\n            {\n                \"id\": 7,\n                \"appointmentDate\": \"2024-06-30\",\n                \"appointmentStartTime\": \"2024-06-30T09:30:51.129Z\",\n                \"appointmentEndTime\": \"2024-06-30\",\n                \"userId\": 6,\n                \"createdDate\": \"2024-05-30T14:07:18.904Z\"\n            },\n            {\n                \"id\": 6,\n                \"appointmentDate\": \"2024-06-30\",\n                \"appointmentStartTime\": \"2024-06-30T09:30:51.129Z\",\n                \"appointmentEndTime\": \"2024-06-30\",\n                \"userId\": 5,\n                \"createdDate\": \"2024-05-30T14:04:41.409Z\"\n            },\n            {\n                \"id\": 5,\n                \"appointmentDate\": \"2024-06-30\",\n                \"appointmentStartTime\": \"2024-06-30T09:30:51.129Z\",\n                \"appointmentEndTime\": \"2024-06-30\",\n                \"userId\": 3,\n                \"createdDate\": \"2024-05-30T14:03:59.088Z\"\n            },\n            {\n                \"id\": 4,\n                \"appointmentDate\": \"2024-05-30\",\n                \"appointmentStartTime\": \"2024-05-30T09:30:51.129Z\",\n                \"appointmentEndTime\": \"2024-05-30\",\n                \"userId\": 3,\n                \"createdDate\": \"2024-05-30T13:55:31.180Z\"\n            },\n            {\n                \"id\": 3,\n                \"appointmentDate\": \"2024-05-30\",\n                \"appointmentStartTime\": \"2024-05-30T09:30:51.129Z\",\n                \"appointmentEndTime\": \"2024-05-30\",\n                \"userId\": 2,\n                \"createdDate\": \"2024-05-30T13:52:45.662Z\"\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "get one appointment",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/appointments/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"appointments",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get one appointment",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/appointments/:id",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"appointments",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "222"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"de-TMhZIZubdwva6QkDThNHf7/1KsI\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 May 2024 14:45:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Appointment data retrived\",\n    \"data\": {\n        \"id\": 3,\n        \"appointmentDate\": \"2024-05-30\",\n        \"appointmentStartTime\": \"2024-05-30T09:30:51.129Z\",\n        \"appointmentEndTime\": \"2024-05-30\",\n        \"userId\": 2,\n        \"createdDate\": \"2024-05-30T13:52:45.662Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Create Appointment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\":3,\r\n    \"appointmentDate\":\"2024-05-30T09:30:51.129Z\",\r\n    \"appointmentStartTime\":\"2024-05-30T09:30:51.129Z\",\r\n    \"appointmentEndTime\":\"2024-05-30T010:00:51.129Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/appointments",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"appointments"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create Appointment",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"userId\":2,\r\n    \"appointmentDate\":\"2024-05-30\",\r\n    \"appointmentStartTime\":\"2024-05-30T09:30:51.129Z\",\r\n    \"appointmentEndTime\":\"2024-05-30T010:00:51.129Z\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/appointments",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"appointments"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "245"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"f5-KDKLP/plWKnfEDKNip8zMWjcT0E\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 May 2024 13:52:45 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"id\": 1,\n        \"appointmentDate\": \"2024-05-30\",\n        \"appointmentStartTime\": \"2024-05-30T09:30:51.129Z\",\n        \"appointmentEndTime\": \"2024-05-30T010:00:51.129Z\",\n        \"userId\": 2,\n        \"createdDate\": \"2024-05-30T010:00:51.129Z\"\n    },\n    \"message\": \"appointment Created Successfully\"\n}"
+						},
+						{
+							"name": "alredy have appoinment",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"userId\":2,\r\n    \"appointmentDate\":\"2024-05-30\",\r\n    \"appointmentStartTime\":\"2024-05-30T09:30:51.129Z\",\r\n    \"appointmentEndTime\":\"2024-05-30T010:00:51.129Z\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/appointments",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"appointments"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "61"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3d-2LFX5owWmo6cVrkeVh31otDYXbU\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 May 2024 13:54:34 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User have Appoinemnt for the date : 2024-05-30 \"\n}"
+						},
+						{
+							"name": "past validation",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"userId\":3,\r\n    \"appointmentDate\":\"2024-06-30T09:30:51.129Z\",\r\n    \"appointmentStartTime\":\"2024-06-30T09:30:51.129Z\",\r\n    \"appointmentEndTime\":\"2024-06-30T011:00:51.129Z\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/appointments",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"appointments"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "51"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"33-Dd6qsboEyIYcN1ykw7SbXj59R3w\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 May 2024 14:02:41 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Appointment can be booked for future.\"\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
